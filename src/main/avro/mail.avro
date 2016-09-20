@@ -1,0 +1,30 @@
+{
+  "namespace": "com.felit.avro",
+  "doc": "This is a message.",
+  "protocol": "UserProtocol",
+  "name": "HelloWorld",
+  "types": [
+    {
+      "name": "User",
+      "type": "record",
+      "fields": [
+        {
+          "name": "name",
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "messages": {
+    "sayHello": {
+      "doc": "say Hello to manbers",
+      "request": [
+        {
+          "name": "name",
+          "type": "string"
+        }
+      ],
+      "response": "User"
+    }
+  }
+}
